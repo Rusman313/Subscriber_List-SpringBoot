@@ -9,15 +9,16 @@
 <body>
     <h1>Welcome to the Site!</h1>
     <h3>Subscribe to our list below:</h3>
-    <form action="#">
+    <form action="#" th:action="@{/}" th:object="${subscriber}" method="POST">
+        <!--The action I want you to take is go back to Home page, I want you to post -->
         <label for="firstName">First Name:</label>
-        <input type="text"  name="firstName"/>
+        <input type="text"  name="firstName" th:field="*{firstName}" />
 
         <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName"/>
+        <input type="text" name="lastName" th:field="*{lastName}" />
 
         <label for="userName">User Name:</label>
-        <input type="text" name="userName"/>
+        <input type="text" name="userName" th:field="*{userName}" />
 
         <button type="submit">Submit Your Name</button>
 
