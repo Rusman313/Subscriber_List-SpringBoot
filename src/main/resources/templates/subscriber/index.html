@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
+<!--This allows us to load up the thymeleaf commands in the html doc-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,5 +9,18 @@
 <body>
     <h1>Welcome to the Site!</h1>
     <h3>Subscribe to our list below:</h3>
+    <form action="#">
+        <label for="firstName">First Name:</label>
+        <input type="text"  name="firstName"/>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName"/>
+
+        <label for="userName">User Name:</label>
+        <input type="text" name="userName"/>
+
+        <button type="submit">Submit Your Name</button>
+
+    </form>
 </body>
 </html>
